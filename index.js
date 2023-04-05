@@ -7,13 +7,13 @@ const popBtn = document.getElementById("pop-btn")
 const shiftBtn = document.getElementById("shift-btn")
 
 //localStorage.clear()
-let emojisFromLocalStorage = JSON.parse(localStorage.getItem("myEmojis"))
-console.log(emojisFromLocalStorage)
+//let emojisFromLocalStorage = JSON.parse(localStorage.getItem("myEmojis"))
+//console.log(emojisFromLocalStorage)
 
-if(emojisFromLocalStorage){
-    myEmojis = emojisFromLocalStorage
-    render(myEmojis)
-}
+//if(emojisFromLocalStorage){
+  //  myEmojis = emojisFromLocalStorage
+    //render(myEmojis)
+//}
 
 function render(emojis) {
     emojiContainer.innerHTML = ""
@@ -30,7 +30,7 @@ function lazyAss(){
         //myEmojis.push(emojiInput.value)
          //myEmojis.unshift(emojiInput.value)
      emojiInput.value = ""
-         localStorage.setItem("myEmojis", JSON.stringify(myEmojis) )
+        // localStorage.setItem("myEmojis", JSON.stringify(myEmojis) )
         render(myEmojis)
     //}
 }
